@@ -43,7 +43,7 @@ def main():
 
     my_data = genfromtxt(file_name, delimiter=',')
     row = 0
-    # exp_prices_list = list()
+
     # Runtime O(n)
     eqs = defaultdict(list)
     gross_return, ex_prices, lda_mlg_rt1, lda_mlg_rt2, net_returns = list(),list(), list(), list(), list()
@@ -53,7 +53,6 @@ def main():
     CRSYLD1, CRSPRD1, CRDFED, CRDSED = [], [], [], []
     for line in my_data:
         if line[0] in years:
-            #print("year = %d" % int(line[0]))
 
             # Storing original values
 
