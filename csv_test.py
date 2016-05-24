@@ -23,7 +23,7 @@ def main():
     dictionary_of_headers = {}
 
 
-    #opening the file, and adding the headers to the dictionary.
+    #opening the file, and adding the headers to a dictionary.
     try:
         file = open(file_name, 'r')
         converted_file = reader(file)
@@ -39,18 +39,20 @@ def main():
     except IOError as e:
         print("I/O error({0}): {1}".format(e.errno, e.strerror))
         exit(e.errno)
-        # print("something went wrong when reading the csv, and storing all the headers. \nCheck the file name")
 
+    # Places all the information from the csv (except headers) into a list / array.
     my_data = genfromtxt(file_name, delimiter=',')
+
     row = 0
-    # exp_prices_list = list()
-    # Runtime O(n)
+
     eqs = defaultdict(list)
     gross_return, ex_prices, lda_mlg_rt1, lda_mlg_rt2, net_returns = list(),list(), list(), list(), list()
     harv_area, c_yield, production, feed, usage = list(), list(), list(), list(), list()
 
     CRPFRM, CREMGR1, CRLDPRT, CRELDPR1, CRENRS1, CRSHAR1 = list(), list(), list(),list(), list(), list()
     CRSYLD1, CRSPRD1, CRDFED, CRDSED = [], [], [], []
+
+    # Runtime O(n). loops through the list with all the data and run calculations for the specified years.
     for line in my_data:
         if line[0] in years:
             #print("year = %d" % int(line[0]))
