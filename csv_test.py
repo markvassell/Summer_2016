@@ -146,9 +146,9 @@ def main():
 
             #comm1
 
-            value = my_funtions.solve_comm1(s, dictionary_of_headers, row)
+            # value = my_funtions.solve_comm1(s, dictionary_of_headers, row)
 
-            #s[count][dictionary_of_headers['comm1']]
+            # s[count][dictionary_of_headers['comm1']]
             #
             # print("Expected prices: $%f" % exp_prices)
             # print("Expected gross return: $%f" % exp_market_gross_return)
@@ -181,7 +181,7 @@ def main():
         print(i,eqs[i][0])
 
     plt.plot(years, CRPFRM,'bo',years, CRPFRM, 'k')
-    plt.ylabel('Price ($)')
+    plt.ylabel('basedata')
     plt.xlabel('Years')
     plt.show()
 
