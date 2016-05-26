@@ -25,8 +25,14 @@ def main():
                 if int(row['ZTIME']) in years:
                     count += 1
                     ex_prices.append(expected_prices(all_rows))
-
-
+                    gross_return.append(expected_market_gross_return(all_rows))
+                    rt_1, rt_2 = LDG_and_MLG_actual_expected (all_rows)
+                    lda_mlg_rt1.append(rt_1)
+                    lda_mlg_rt2.append(rt_2)
+        print("Expected Prices: ", ex_prices)
+        print("Gross return: ", gross_return)
+        print(lda_mlg_rt1)
+        print(lda_mlg_rt2)
 
 
 
@@ -36,6 +42,7 @@ def main():
     except:
         print("Error please check your conditional statements")
 
+
 def expected_prices(rows):
     current_year = rows[-1]
     previous_year = rows[-2]
@@ -43,5 +50,23 @@ def expected_prices(rows):
               float(current_year['CRE3'])) *float(current_year['CRPFRM']))
     return(price)
 
+
+def expected_market_gross_return(rows):
+    current_year = rows[-1]
+    gross = float(current_year['CREPFM1']) * float(current_year['CREYLD1'])
+    return gross
+
+def LDG_and_MLG_actual_expected (rows):
+    current_year, previous_year = rows[-1], rows[-2]
+    rate1 = 0.25 * max(0, float(previous_year['CRPLNR1']) + 0.40 - float(current_year['CRPFRM'])) + \
+            0.5 * max(0, float(previous_year['CRPLNR1']) + 0.20 - float(previous_year['CRPFRM'])) + \
+            0.25 * max(0, float(previous_year['CRPLNR1']) - float(current_year['CRPFRM']) + float(current_year['CRE4']))
+
+
+    rate2 = 0.25 * max(0, float(current_year['CRPLNR1']) + 0.40 - float(previous_year['CREPFM1'])) + \
+            0.5 * max(0, float(current_year['CRPLNR1']) + 0.20 - float(current_year['CREPFM1'])) + \
+            0.25 * max(0, float(current_year['CRPLNR1']) - float(previous_year['CREPFM1']))
+
+    return rate1, rate2
 
 main()
