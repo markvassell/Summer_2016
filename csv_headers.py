@@ -12,6 +12,9 @@ def main():
     file = "crop_data.csv"
     all_rows = []
 
+    gross_return, ex_prices, lda_mlg_rt1, lda_mlg_rt2, net_returns = list(),list(), list(), list(), list()
+    harv_area, c_yield, production, feed, usage = list(), list(), list(), list(), list()
+
     try:
         with open(file) as csv_file:
             basedata = DictReader(csv_file)
@@ -20,10 +23,10 @@ def main():
                 if count > 0 and int(row['ZTIME']) not in years:
                     break
                 if int(row['ZTIME']) in years:
-                    #print(row['ZTIME'])
-
                     count += 1
-                    expected_prices(all_rows)
+                    ex_prices.append(expected_prices(all_rows))
+
+
 
 
 
@@ -34,16 +37,11 @@ def main():
         print("Error please check your conditional statements")
 
 def expected_prices(rows):
-    current_row = rows[-1]
-    past_row = rows[-2]
-    #print("current row: ", current_row)
-    #return price
+    current_year = rows[-1]
+    previous_year = rows[-2]
+    price = ((.253 + .747 * float(previous_year['CRSYLD1'])/ float(previous_year['CREYLD1']) + \
+              float(current_year['CRE3'])) *float(current_year['CRPFRM']))
+    return(price)
 
-    price = ((.253 + .747 * float(past_row['CRSYLD1']))/ float(past_row['CREYLD1']))
-    print(price)
-
-
-
-#return price
 
 main()
