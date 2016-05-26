@@ -150,7 +150,7 @@ def main():
 
             # s[count][dictionary_of_headers['comm1']]
             #
-            # print("Expected prices: $%f" % exp_prices)
+            print("Expected prices: $%f" % exp_prices)
             # print("Expected gross return: $%f" % exp_market_gross_return)
             # print("Average LDP and MLG rates1: $%f" % LDP_and_MLG_rates1)
             # print("Average LDP and MLG rates2: $%f" % LDP_and_MLG_rates2)
