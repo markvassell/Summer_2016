@@ -156,7 +156,7 @@ def main():
             # print("Average LDP and MLG rates2: $%f" % LDP_and_MLG_rates2)
             # print("Corn expected net returns: $%f" % corn_exp_net_returns)
             # print("Corn harvested area: %f" % corn_harvested_area)
-            print("Corn yield: $%f" % corn_yield)
+            # print("Corn yield: $%f" % corn_yield)
             # print("Corn production: %f" % corn_production)
             # print("Corn feed: %f" % corn_feed)
             # print("Corn seeds used: %f " % seeds_used)

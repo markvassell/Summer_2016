@@ -38,8 +38,8 @@
       <file leaf-file-name="csv_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csv_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="158" column="12" selection-start-line="158" selection-start-column="12" selection-end-line="158" selection-end-column="12" />
+            <state relative-caret-position="688">
+              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="185" selection-end-column="14" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -47,12 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csv_headers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="csv_headers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csv_headers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="-1427">
+              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_funtions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my_funtions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_funtions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="57" column="64" selection-start-line="57" selection-start-column="64" selection-end-line="57" selection-end-column="64" />
+            <state relative-caret-position="120">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="78" selection-end-column="97" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -88,8 +90,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/csv_headers.py" />
         <option value="$PROJECT_DIR$/csv_test.py" />
+        <option value="$PROJECT_DIR$/csv_headers.py" />
       </list>
     </option>
   </component>
@@ -152,7 +154,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.csv_test">
+  <component name="RunManager" selected="Python.csv_headers">
     <configuration default="false" name="csv_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -327,8 +329,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.csv_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.csv_headers" />
+        <item index="0" class="java.lang.String" itemvalue="Python.csv_headers" />
+        <item index="1" class="java.lang.String" itemvalue="Python.csv_test" />
       </list>
     </recent_temporary>
   </component>
@@ -409,7 +411,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -503,30 +507,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csv_headers.py">
+    <entry file="file://$PROJECT_DIR$/my_funtions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="78" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csv_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="158" column="12" selection-start-line="158" selection-start-column="12" selection-end-line="158" selection-end-column="12" />
+        <state relative-caret-position="688">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="185" selection-end-column="14" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_funtions.py">
+    <entry file="file://$PROJECT_DIR$/csv_headers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="57" column="64" selection-start-line="57" selection-start-column="64" selection-end-line="57" selection-end-column="64" />
+        <state relative-caret-position="-1427">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
